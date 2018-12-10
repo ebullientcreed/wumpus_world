@@ -8,17 +8,13 @@ How the code is structured.
 			-Programmed in Java.
 			-Sample code is used.
 			-In CheckTrueFalse.java added the following functions
-			1)tt_entails()	- The method that return if the knowledge base entails alpha .The check is done for kb and negation of alpha
-			2)tt_check_all()- The symbols in the set are assigned values recursively for each model and once all the symbols are assigned
-					value, PL_TRUE() is checked for kb and model. If true then PL_TRUE() is checked for alpha and model and result is 
-					returned. If the Kb,model is false then return true.
+			1)tt_entails()	- The method that return if the knowledge base entails alpha .The check is done for kb and 						negation of alpha
+			2)tt_check_all()- The symbols in the set are assigned values recursively for each model and once all the symbols 					are assigned value, PL_TRUE() is checked for kb and model. If true then PL_TRUE() is checked for 					alpha and model and result is returned. If the Kb,model is false then return true.
 			3)EXTEND()	- Method to extend the model by assigning the passed boolean value to the symbol
-			4)PL_TRUE()	- Here the symbols and connectives are evaluated on the basis of different connectives. The logic for each connective
-					returns different values for each subexpressions. 
-			5)createResult()- Finally the result after checking both the entailment(kb,alpha) and(kb,not(alpha)) is copied to the 
-					result.txt. 
+			4)PL_TRUE()	- Here the symbols and connectives are evaluated on the basis of different connectives. The 						logic for each connective returns different values for each subexpressions. 
+			5)createResult()- Finally the result after checking both the entailment(kb,alpha) and(kb,not(alpha)) is copied 						to the	result.txt. 
 			-In LogicalExpression.java modified 
-			1)setUniqueSymbol()-The hashset unqset and negunqset is used to extract all the uniquesymbols present while reading kb and alpha.
+			1)setUniqueSymbol()-The hashset unqset and negunqset is used to extract all the uniquesymbols present while 						reading kb and alpha.
 
 Files		   :	-Submited a ZIPPED directory called assignment7_nxt6413.zip in the blackboard. 
 			-This zip directory includes CheckTrueFalse.java, LogicalExpression.java, wumpus_rules.txt and readme.txt files.
